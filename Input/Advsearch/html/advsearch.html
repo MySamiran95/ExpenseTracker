@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Advance Search Input</title>
+    <link rel="stylesheet" href="../../css/input.css">
+    <link rel="stylesheet" href="../../../Choose/AdvSearch/html/advsearch.html">
+</head>
+
+<body>
+    <div id="toast"></div>
+    <div class="upper">
+        <div class="title">Advance Search</div>
+    </div>
+    <div class="mid">
+        <form class="form-inputs">
+            <select class="input-style" required>
+                <option value="">Category 1</option>
+                <option value="House">House</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Education">Education</option>
+                <option value="Medical">Medical</option>
+                <option value="Travel">Travel</option>
+                <option value="Wellbeing">Wellbeing</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Subscription">Subscription</option>
+                <option value="Household">Household</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Trips">Trips</option>
+                <option value="Giving">Giving</option>
+                <option value="Vehicle">Vehicle</option>
+                <option value="Events">Events</option>
+                <option value="Care">Care</option>
+                <option value="Investments">Investments</option>
+                <option value="Others">Others</option>
+            </select>
+            <select class="input-style" required>
+                <option value="">Category 2</option>
+                <option value="House Rent">House Rent (House)</option>
+                <option value="House Deposit">House Deposit (House)</option>
+                <option value="Electricity Bill">Electricity Bill (House)</option>
+                <option value="Home Maintainance">Home Maintainance (House)</option>
+                <option value="Water Bill">Water Bill (House)</option>
+                <option value="Gas Bill">Gas Bill (House)</option>
+                <option value="Maid">Maid (House)</option>
+                <option value="House Purchase">House Purchase (House)</option>
+                <option value="Vegetables">Vegetables (Groceries)</option>
+                <option value="Fruits">Fruits (Groceries)</option>
+                <option value="Non-Veg">Non-Veg (Groceries)</option>
+                <option value="Clothes">Clothes (Fashion)</option>
+                <option value="Watch/Bracelets/Wearables">Watch/Bracelets/Wearables (Fashion)</option>
+                <option value="Perfumes">Perfumes (Fashion)</option>
+                <option value="Metals">Metals (Fashion)</option>
+                <option value="School Fees">School Fees (Education)</option>
+                <option value="College Fees">College Fees (Education)</option>
+                <option value="Degree Fees">Degree Fees (Education)</option>
+                <option value="Tuition Fees">Tuition Fees (Education)</option>
+                <option value="Upskills">Upskills (Education)</option>
+                <option value="Books">Books (Education)</option>
+                <option value="Stationaries">Stationaries (Education)</option>
+                <option value="Hospital">Hospital (Medical)</option>
+                <option value="Physician">Physician (Medical)</option>
+                <option value="Self">Self (Medical)</option>
+                <option value="Insurance">Insurance (Medical)</option>
+                <option value="Food">Food (Travel)</option>
+                <option value="Train">Train (Travel)</option>
+                <option value="Bus">Bus (Travel)</option>
+                <option value="Rickshaw">Rickshaw (Travel)</option>
+                <option value="Car">Car (Travel)</option>
+                <option value="Flight">Flight (Travel)</option>
+                <option value="Boat">Boat (Travel)</option>
+                <option value="Physical Activities">Physical Activities (Wellbeing)</option>
+                <option value="Personal Care/Grooming">Personal Care/Grooming (Wellbeing)</option>
+                <option value="Cosmetics">Cosmetics (Wellbeing)</option>
+                <option value="Nutritions & Supplements">Nutritions & Supplements (Wellbeing)</option>
+                <option value="Movies">Movies (Entertainment)</option>
+                <option value="Restaurants">Restaurants (Entertainment)</option>
+                <option value="Food">Food (Entertainment)</option>
+                <option value="Games">Games (Entertainment)</option>
+                <option value="Bar/Clubs/Pubs">Bar/Clubs/Pubs (Entertainment)</option>
+                <option value="Ticket Entry Services">Ticket Entry Services (Entertainment)</option>
+                <option value="Sports">Sports (Entertainment)</option>
+                <option value="Liquor">Liquor (Entertainment)</option>
+                <option value="Smoking">Smoking (Entertainment)</option>
+                <option value="Wifi">Wifi (Subscription)</option>
+                <option value="Mobile">Mobile (Subscription)</option>
+                <option value="OTT">OTT (Subscription)</option>
+                <option value="Television">Television (Subscription)</option>
+                <option value="Household Items">Household Items (Household)</option>
+                <option value="Stationaries">Stationaries (Household)</option>
+                <option value="Home Renovation">Home Renovation (Household)</option>
+                <option value="Phone">Phone (Electronics)</option>
+                <option value="Laptop">Laptop (Electronics)</option>
+                <option value="Television">Television (Electronics)</option>
+                <option value="Audio">Audio (Electronics)</option>
+                <option value="Wearables">Wearables (Electronics)</option>
+                <option value="India">India (Trips)</option>
+                <option value="International">International (Trips)</option>
+                <option value="Gifts">Gifts (Giving)</option>
+                <option value="Donation/Charity">Donation/Charity (Giving)</option>
+                <option value="Parents">Parents (Giving)</option>
+                <option value="Religious">Religious (Giving)</option>
+                <option value="Tips">Tips (Giving)</option>
+                <option value="Sponsorship">Sponsorship (Giving)</option>
+                <option value="Purchase">Purchase (Vehicle)</option>
+                <option value="Petrol/Charge">Petrol/Charge (Vehicle)</option>
+                <option value="Maintainance">Maintainance (Vehicle)</option>
+                <option value="Replacements">Replacements (Vehicle)</option>
+                <option value="Insurance">Insurance (Vehicle)</option>
+                <option value="Tolls">Tolls (Vehicle)</option>
+                <option value="Parking Fees">Parking Fees (Vehicle)</option>
+                <option value="Govt Charges">Govt Charges (Vehicle)</option>
+                <option value="Marraige">Marraige (Events)</option>
+                <option value="Birthday">Birthday (Events)</option>
+                <option value="Religious">Religious (Events)</option>
+                <option value="Death">Death (Events)</option>
+                <option value="Oldage Care">Oldage Care (Care)</option>
+                <option value="Hospital Care">Hospital Care Care</option>
+                <option value="Daycare/Nanny">Daycare/Nanny Care</option>
+                <option value="Stock">Stock (Investments)</option>
+                <option value="Mutual Fund">Mutual Fund (Investments)</option>
+                <option value="LIC">LIC (Investments)</option>
+                <option value="Fixed Deposits">Fixed Deposits (Investments)</option>
+                <option value="Gold">Gold (Investments)</option>
+                <option value="Bonds">Bonds (Investments)</option>
+                <option value="Real Estate">Real Estate (Investments)</option>
+                <option value="NPS">NPS (Investments)</option>
+                <option value="Provident Fund">Provident Fund (Investments)</option>
+                <option value="Others">Others</option>
+            </select>
+            <select class="input-style" required>
+                <option value="">For</option>
+                <option value="Family">Family</option>
+                <option value="Friends">Friends</option>
+                <option value="Samiran">Samiran</option>
+                <option value="Samruddhi">Samruddhi</option>
+                <option value="Child 1">Child 1</option>
+                <option value="Child 2">Child 2</option>
+                <option value="Parent 1">Parent 1</option>
+                <option value="Parent 2">Parent 2</option>
+                <option value="Others">Others</option>
+            </select>
+            <select class="input-style" required>
+                <option value="">From</option>
+                <option value="Samiran">Samiran</option>
+                <option value="Samruddhi">Samruddhi</option>
+                <option value="Child">Child</option>
+            </select>
+            <select class="input-style" required>
+                <option value="">Mode of Payment</option>
+                <option value="UPI">UPI</option>
+                <option value="Cash">Cash</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Online">Online</option>
+                <option value="Cheque">Cheque</option>
+                <option value="EMI">EMI</option>
+                <option value="Points/Casback/Rewards">Points/Casback/Rewards</option>
+                <option value="Others">Others</option>
+            </select>
+        </form>
+    </div>
+    <div class="lower">
+        <div class="submit-button" onclick="addData()">Submit</div>
+    </div>
+    <script src="../../../JS/universal3.js"></script>
+    <script src="../../../JS/gsap.min.js"></script>
+    <script src="../../../JS/animate.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
