@@ -1,7 +1,7 @@
 {
   "name": "Expense Tracker App",
   "short_name": "Tracker",
-  "start_url": "https://mysamiran95.github.io/ExpenseTracker/index.html",
+  "start_url": "/ExpenseTracker/index.html",
   "display": "standalone",
   "background_color": "#e0e0e0",
   "theme_color": "#000000",
