@@ -2,7 +2,7 @@
   "name": "Expense Tracker App",
   "short_name": "Tracker",
   "start_url": "index.html",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#e0e0e0",
   "theme_color": "#000000",
   "orientation": "portrait",
