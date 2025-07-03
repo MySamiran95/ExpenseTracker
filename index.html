@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Dashboard/css/style.css">
+    <link rel="stylesheet" href="Icons/font awesome/css/all.css">
+    <link rel="stylesheet" href="Past/html/past.html">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="Icons/icons/icon-192x192.png">
+</head>
+
+<body ondblclick="window.location.href='Input/Advsearch/html/advsearch.html'">
+    <div id="toast"></div>
+
+    <div class="loading-screen">
+        <div id="loading1" class="loading-greeting">नमस्ते!</div>
+        <div id="loading2" class="loading-greeting">નમસ્તે!</div>
+        <div id="loading3" class="loading-greeting">வணக்கம்!</div>
+        <div id="loading4" class="loading-greeting">নমস্কার!</div>
+        <div id="loading5" class="loading-greeting">नमस्कार!</div>
+        <div id="loading6" class="loading-greeting">ನಮಸ್ಕಾರ!</div>
+        <div id="loading7" class="loading-greeting">નમસ્કાર!</div>
+        <div id="loading8" class="loading-greeting">खम्मा घणी!</div>
+        <div id="loading9" class="loading-greeting">ନମସ୍କାର!</div>
+        <div id="loading10" class="loading-greeting">ਸਤ ਸ੍ਰੀ ਅਕਾਲ!</div>
+        <div id="loading11" class="loading-greeting">നമസ്കാരം!</div>
+        <div id="loading12" class="loading-greeting">नमः!</div>
+        <div id="loading13" class="loading-greeting">Hello!</div>
+    </div>
+    <div class="upper">
+        <div class="upper-left">
+            <div class="greetings">
+                <div class="greetings1">Good!&nbsp;</div>
+                <div class="greetings2"></div>
+            </div>
+        </div>
+        <div class="upper-right">
+            <div class="statistic-button black-container" onclick="animatedButton(this, 'Past/html/past.html')"><i
+                    class="fa-solid fa-chart-pie-simple"></i></div>
+        </div>
+    </div>
+    <div class="mid">
+        <div class="expenses-card white-container" onclick="animatedButton(this, 'Stats/Total/html/total.html')">
+            <div class="expenses-card-upper">
+                <div class="month-category">
+                    <div class="month"></div>
+                    <div class="month-word">&nbsp;Month</div>
+                </div>
+                <div class="expenses-numbers"><div class="total-expenses">
+                    <div class="rupee-sign">₹</div>&nbsp;<div class="monthly-amount"></div></div>
+                    <div class="actual-expenses">
+                        <div class="actual-expenses-number">₹&nbsp;<div class="our-expenses"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="expenses-card-lower">
+                <div class="expenses-card-lower-left">
+                    <div class="today-container">
+                        <div class="today-container-upper">Today</div>
+                        <div class="today-container-lower">
+                            ₹&nbsp;<div class="today-amount"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="expenses-card-lower-right">
+                    <div class="count-container">
+                        <div class="male-count">
+                            <div class="male-count-icon">
+                                <i class="fa-solid fa-person-simple"></i>
+                            </div>
+                            <div class="male-count-count"></div>
+                        </div>
+                        <div class="female-count">
+                            <div class="female-count-icon">
+                                <i class="fa-solid fa-person-dress-simple"></i>
+                            </div>
+                            <div class="female-count-count"></div>
+                        </div>
+                        <div class="child-count">
+                            <div class="child-count-icon">
+                                <i class="fa-solid fa-child"></i>
+                            </div>
+                            <div class="child-count-count"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="lower-left">
+            <div class="lower-heading">
+                Current Month Expenses
+            </div>
+            <div class="lower-containers">
+                <div id="row-one" class="container-row">
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/House/html/house.html')">
+                        <div id="house-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>House</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-house-heart"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="house-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="house-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="house-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Groceries/html/groceries.html')">
+                        <div id="groceries-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Groceries</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-leafy-green"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="groceries-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="groceries-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="groceries-count" class="container-blank"></div>
+                    </div>
+                </div>
+                <div id="row-two" class="container-row">
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Fashion/html/fashion.html')">
+                        <div id="fashion-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Fashion</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-shirt"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="fashion-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="fashion-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fashion-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Education/html/education.html')">
+                        <div id="education-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Education</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-book-blank"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="education-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="education-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="education-count" class="container-blank"></div>
+                    </div>
+                </div>
+                <div id="row-three" class="container-row">
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Travel/html/travel.html')">
+                        <div id="travel-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Travel</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-road"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="travel-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="travel-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="travel-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Wellbeing/html/wellbeing.html')">
+                        <div id="wellbeing-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Well-Being</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-restroom-simple"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="wellbeing-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="wellbeing-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="wellbeing-count" class="container-blank"></div>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Entertainment/html/entertainment.html')">
+                        <div id="entertainment-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Entertainment</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-camera-movie"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="entertainment-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="entertainment-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="entertainment-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Subscription/html/subscription.html')">
+                        <div id="subscriptions-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Subscriptions</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-mobile"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="subscriptions-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="subscriptions-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="subscriptions-count" class="container-blank"></div>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Household/html/household.html')">
+                        <div id="household-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Household</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-toilet-paper-blank"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="household-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="household-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="household-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Electronics/html/electronics.html')">
+                        <div id="electronics-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Electronics</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-laptop"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="electronics-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="electronics-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="electronics-count" class="container-blank"></div>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Trips/html/trips.html')">
+                        <div id="trips-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Trips</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-plane"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="trips-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="trips-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="trips-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Giving/html/giving.html')">
+                        <div id="giving-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Giving</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="giving-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="giving-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="giving-count" class="container-blank"></div>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Medical/html/medical.html')">
+                        <div id="medical-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Medical</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-house-medical"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="medical-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="medical-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="medical-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Vehicle/html/vehicle.html')">
+                        <div id="vehicle-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Vehicle</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-car-side"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="vehicle-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="vehicle-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="vehicle-count" class="container-blank"></div>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container black-container" onclick="animatedButton(this, 'Choose/Care/html/care.html')">
+                        <div id="care-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Care</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="care-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="care-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="care-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Events/html/events.html')">
+                        <div id="events-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Events</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-people-group"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="events-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="events-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="events-count" class="container-blank"></div>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Investments/html/investments.html')">
+                        <div id="investments-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Investments</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="investments-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="investments-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="investments-count" class="container-blank"></div>
+                    </div>
+                    <div class="container black-container"
+                        onclick="animatedButton(this, 'Choose/Others/html/others.html')">
+                        <div id="others-category" class="container-upper">
+                            <div class="container-upper-left">
+                                <span>Others</span>
+                            </div>
+                            <div class="container-upper-right"><i class="fa-solid fa-person-circle-question"></i></div>
+                        </div>
+                        <div class="container-lower">
+                            <div class="container-lower-upper">
+                                <div class="container-lower-upper-left">Total Monthly:</div>
+                                <div class="container-lower-upper-right">₹&nbsp;<div id="others-monthly"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container-lower-lower">
+                                <div class="container-lower-lower-left">Today Exp :</div>
+                                <div class="container-lower-lower-right">₹&nbsp;<div id="others-today"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="others-count" class="container-blank"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-right">
+            <div class="lower-heading">
+                Transactions
+            </div>
+            <div class="lower-right-lower">
+                <div class="transaction-upper">
+                    <div class="transaction-upper-left">
+                        <div class="income-button white-container"
+                            onclick="animatedButton(this, 'Choose/Income/html/income.html')">
+                            Income</div>
+                    </div>
+                    <div class="transaction-upper-right">
+                        <div class="invest-button white-container"
+                            onclick="animatedButton(this, 'Choose/Investments/html/investments.html')">Invest</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="JS/universal.js"></script>
+    <script src="JS/gsap.min.js"></script>
+    <script src="Dashboard/js/animate.js"></script>
+    <script src="Dashboard/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Education Input</title>
+    <link rel="stylesheet" href="../../css/input.css">
+</head>
+
+<body>
+    <div id="toast"></div>
+    <div class="upper">
+        <div class="title">Education</div>
+    </div>
+    <div class="mid">
+        <form class="form-inputs">
+            <input class="input-style" type="date">
+            <input id="category1" class="input-style" type="text" value="Education" readonly>
+            <select class="input-style" required>
+                <option value="">Category</option>
+                <option value="School Fees">School Fees</option>
+                <option value="College Fees">College Fees</option>
+                <option value="Degree Fees">Degree Fees</option>
+                <option value="Tuition Fees">Tuition Fees</option>
+                <option value="Upskills">Upskills</option>
+                <option value="Books">Books</option>
+                <option value="Stationaries">Stationaries</option>
+                <option value="Others">Others</option>
+            </select>
+            <select class="input-style" required>
+                <option value="">For</option>
+                <option value="Family">Family</option>
+                <option value="Friends">Friends</option>
+                <option value="Samiran">Samiran</option>
+                <option value="Samruddhi">Samruddhi</option>
+                <option value="Child 1">Child 1</option>
+                <option value="Child 2">Child 2</option>
+                <option value="Parent 1">Parent 1</option>
+                <option value="Parent 2">Parent 2</option>
+                <option value="Others">Others</option>
+            </select>
+            <select class="input-style" required>
+                <option value="">From</option>
+                <option value="Samiran">Samiran</option>
+                <option value="Samruddhi">Samruddhi</option>
+                <option value="Child">Child</option>
+            </select>
+            <select class="input-style" required>
+                <option value="">Mode of Payment</option>
+                <option value="UPI">UPI</option>
+                <option value="Cash">Cash</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Online">Online</option>
+                <option value="Cheque">Cheque</option>
+                <option value="EMI">EMI</option>
+                <option value="Points/Casback/Rewards">Points/Casback/Rewards</option>
+                <option value="Others">Others</option>
+            </select>
+            <input class="input-style" type="text" placeholder="Reason">
+            <input class="input-style" type="number" placeholder="Amount">
+        </form>
+    </div>
+    <div class="lower">
+        <div class="submit-button" onclick="addData()">Submit</div>
+    </div>
+    <script src="../../../JS/universal.js"></script>
+    <script src="../../../JS/gsap.min.js"></script>
+    <script src="../../../JS/animate.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

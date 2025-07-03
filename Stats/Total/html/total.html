@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Total Stats</title>
+    <link rel="stylesheet" href="../css/stats.css">
+    <link rel="stylesheet" href="../../ActualExpenses/html/actualexpenses.html">
+</head>
+
+<body ondblclick="window.location.href='../../ActualExpenses/html/actualexpenses.html'">
+    <div id="toast"></div>
+    <div class="upper">
+        <div class="title">Total Expenses Stats</div>
+    </div>
+    <div class="mid">
+        <div class="graph">
+            <div class="average-area">
+                <div class="average-container">
+                    <div class="average-container-left">Average</div>
+                    <div class="average-container-right">₹&nbsp;<div class="average-amount"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="lower-left">
+            <div class="lower-heading">Top Expenses - Current Month</div>
+            <div class="lower-left-content">
+                <div class="top-content">
+                    <div class="top-container">
+                        <div id="ten1content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten1amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten2content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten2amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten3content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten3amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten4content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten4amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten5content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten5amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten6content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten6amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten7content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten7amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten8content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten8amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten9content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten9amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten10content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten10amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten11content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten11amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten12content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten12amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten13content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten13amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten14content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten14amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten15content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten15amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten16content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten16amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten17content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten17amount"></div>
+                        </div>
+                    </div>
+
+                    <div class="top-container">
+                        <div id="ten18content" class="top-container-left"></div>
+                        <div class="top-container-mid">
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="top-container-right">₹&nbsp;<div id="ten18amount"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-section">
+                    <div class="actual-horizontal-section"></div>
+                </div>
+                <div class="lower-heading">Current Month Contribution</div>
+                <div class="graph2">
+                    <canvas id="myPieChart"></canvas>
+                </div>
+                <div class="person-contribution">
+                    <div class="person-contribution-left">
+                        <div class="person-contribution-container">
+                            <div class="person-container-upper">Samiran</div>
+                            <div class="person-container-lower">₹&nbsp;<div id="samiran-amount"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-contribution-mid">
+                        <div class="person-contribution-container">
+                            <div class="person-container-upper">Samruddhi</div>
+                            <div class="person-container-lower">₹&nbsp;<div id="samruddhi-amount"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person-contribution-right">
+                        <div class="person-contribution-container">
+                            <div class="person-container-upper">Child</div>
+                            <div class="person-container-lower">₹&nbsp;<div id="child-amount"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-section">
+                    <div class="actual-horizontal-section"></div>
+                </div>
+                <div class="lower-heading">Current Month Contribution to</div>
+                <div class="graph2">
+                    <canvas id="myPieChart1"></canvas>
+                </div>
+                <div class="horizontal-section">
+                    <div class="actual-horizontal-section"></div>
+                </div>
+                <div class="lower-heading">Payment Bifurcation</div>
+                <div class="graph2">
+                    <canvas id="myPieChart2"></canvas>
+                </div>
+                <div class="horizontal-section">
+                    <div class="actual-horizontal-section"></div>
+                </div>
+                <div class="history-button-container">
+                    <div class="history-button white-container"
+                        onclick="animatedButton(this,'../../../History/Total/html/total.html')">
+                        History</div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-right">
+            <div class="lower-heading">Monthly Expenses</div>
+            <div class="lower-content">
+                <div class="lower-content-heading">
+                    <div class="heading-left">Month</div>
+                    <div class="heading-mid">Delta</div>
+                    <div class="heading-right">Amount</div>
+                </div>
+                <div class="lower-content-content">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../../../JS/universal.js"></script>
+    <script src="../../../JS/gsap.min.js"></script>
+    <script src="../../../JS/animate.js"></script>
+    <script src="../../js/chart.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

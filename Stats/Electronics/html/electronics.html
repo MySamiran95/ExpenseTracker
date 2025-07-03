@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Electronics Stats</title>
+    <link rel="stylesheet" href="../../css/stats.css">
+</head>
+
+<body>
+    <div id="toast"></div>
+    <div class="upper">
+        <div class="title">Electronics Stats</div>
+    </div>
+    <div class="mid">
+        <div class="graph">
+            <div>
+                <div class="average-area">
+                    <div class="average-container">
+                        <div class="average-container-left">Average</div>
+                        <div class="average-container-right">₹&nbsp;<div class="average-amount"></div></div>
+                    </div>
+                </div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="lower-heading">Monthly Expenses</div>
+        <div class="lower-content">
+            <div class="lower-content-heading">
+                <div class="heading-left">Month</div>
+                <div class="heading-mid">Delta</div>
+                <div class="heading-right">Amount</div>
+            </div>
+            <div class="lower-content-content">
+
+            </div>
+        </div>
+    </div>
+    <script src="../../../JS/universal.js"></script>
+    <script src="../../../JS/gsap.min.js"></script>
+    <script src="../../../JS/animate.js"></script>
+    <script src="../../js/chart.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
