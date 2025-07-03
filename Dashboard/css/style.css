@@ -185,7 +185,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -193,7 +193,7 @@ body {
     width: 100%;
     flex: 0.5;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,7 +208,7 @@ body {
 }
 
 .actual-expenses{
-    width: 100%;
+    padding: 5px 15px 5px 15px;
     display: flex;
     font-size: 13px;
     align-items: center;
@@ -217,14 +217,11 @@ body {
     background: #333333;
     box-shadow: inset 5px 5px 11px #141414,
             inset -5px -5px 11px #525252;
-    width: 125px;
-    height: 25px;
     border-radius: 20px;
     color: white
 }
 
 .actual-expenses-number{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
