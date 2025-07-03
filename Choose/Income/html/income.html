@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Income Choose</title>
+    <link rel="stylesheet" href="../../css/choose.css">
+    <link rel="stylesheet" href="../../../Input/Income/html/income.html">
+</head>
+
+<body>
+    <div id="toast"></div>
+    <div class="upper">
+        <div class="title">
+            Income Category
+        </div>
+    </div>
+    <div class="mid">
+        <div class="amount">
+            <div class="amount-upper">
+                <div class="amount-upper-upper">
+                    Current Month Income
+                </div>
+                <div class="amount-upper-lower">
+                    <div class="rupee-sign">₹</div>&nbsp;<div id="data-monthly"></div>
+                </div>
+            </div>
+            <div class="hr-line"></div>
+            <div class="amount-lower">
+                <div class="amount-lower-upper">Today Income</div>
+                <div class="amount-lower-lower">
+                    <div class="rupee-sign2">₹</div>&nbsp;<div id="data-today"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="lower">
+        <div class="user-category">
+            <div class="user-category-title">Income From (Current Month)</div>
+            <div class="user-category-content">
+                <div class="user-category-content-row">
+                    <div class="user-category-content-row-left">
+                        <div class="user-category-content-row-left-upper">Samiran</div>
+                        <div class="user-category-content-row-left-lower">₹&nbsp;<div id="samiran-data"></div>
+                        </div>
+                    </div>
+                    <div class="user-category-content-row-right">
+                        <div class="user-category-content-row-right-upper">Samruddhi</div>
+                        <div class="user-category-content-row-right-lower">₹&nbsp;<div id="samruddhi-data"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-category-content-row">
+                    <div class="user-category-content-row-left">
+                        <div class="user-category-content-row-left-upper">Child</div>
+                        <div class="user-category-content-row-left-lower">₹&nbsp;<div id="child1-data"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr-gap">
+        <div class="hr-line1"></div>
+    </div>
+
+    <div class="last">
+        <div class="last-upper">
+            <div class="last-upper-left">
+                <div class="history-button white-container" onclick="animatedButton(this,'../../../History/Income/html/income.html')">History</div>
+            </div>
+            <div class="last-upper-right">
+                <div class="stats-button white-container" onclick="animatedButton(this,'../../../Stats/Income/html/income.html')">Statistics</div>
+            </div>
+        </div>
+        <div class="last-lower">
+            <div id="invest-button" class="expense-button green-container" onclick="animatedButton(this,'../../../Input/Income/html/income.html')">Income</div>
+        </div>
+    </div>
+    <script src="../../../JS/universal.js"></script>
+    <script src="../../../JS/gsap.min.js"></script>
+    <script src="../../../JS/animate.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
