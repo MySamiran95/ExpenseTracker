@@ -84,8 +84,6 @@ body {
     justify-content: center;
 }
 
-
-
 .graph {
     width: 380px;
     height: 250px;
@@ -415,12 +413,6 @@ canvas {
     align-items: center;
 }
 
-#myChart{
-    min-width: 360px;
-    max-width: 360px;
-}
-
-
 #myPieChart{
     max-width: 300px;
     max-height: 300px;
@@ -434,6 +426,11 @@ canvas {
 #myPieChart2{
     max-width: 330px;
     max-height: 330px;
+}
+
+#myChart{
+    min-width: 360px;
+    max-width: 360px;
 }
 
 

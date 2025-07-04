@@ -306,7 +306,6 @@ fetchChartData();
 
 let averageData = finalData.getData3
 let averageAmount = document.querySelector(".average-amount")
-let averageActualAmount = document.querySelector(".average-actual-amount")
 
 averageAmount.innerHTML = formatIndianNumber(averageData[20][5])
 

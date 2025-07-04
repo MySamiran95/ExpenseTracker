@@ -40,14 +40,18 @@ function updateDashboardFromData(dashboardData) {
 
     safeUpdate(".month", formatDate(dashboardData[30][0]));
     safeUpdate(".monthly-amount", formatIndianNumber(dashboardData[20][1]));
-    safeUpdate(".our-expenses",formatIndianNumber(dashboardData[21][1]));
+    safeUpdate(".our-expenses", formatIndianNumber(dashboardData[21][1]));
     safeUpdate(".today-amount", formatIndianNumber(dashboardData[20][2]));
     safeUpdate(".male-count-count", dashboardData[27][0]);
     safeUpdate(".female-count-count", dashboardData[27][1]);
     safeUpdate(".child-count-count", dashboardData[27][2]);
 
- document.querySelector(".expenses-card").style.backgroundColor =
-      dashboardData[137]?.[2] <= 0 ? "red" : "#e0e0e0";
+let expenseCard = document.querySelector(".expenses-card");
+
+if (expenseCard) {
+  expenseCard.style.backgroundColor =
+    dashboardData[137]?.[2] <= 0 ? "red" : "#e0e0e0";
+}
 
     const map = [
       "house", "groceries", "fashion", "education", "medical",
@@ -75,7 +79,7 @@ function updateDashboardFromData(dashboardData) {
   } catch (err) {
     console.warn("⚠️ Dashboard update error:", err);
   }
-  
+
 }
 
 function updateHTMLFromData(data) {
@@ -209,6 +213,6 @@ function formatDecimalsOnly() {
 }
 
 
-window.onload = function() {
+window.onload = function () {
   formatDecimalsOnly();
 };
