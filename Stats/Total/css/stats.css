@@ -415,6 +415,12 @@ canvas {
     align-items: center;
 }
 
+#myChart{
+    min-width: 360px;
+    max-width: 360px;
+}
+
+
 #myPieChart{
     max-width: 300px;
     max-height: 300px;
